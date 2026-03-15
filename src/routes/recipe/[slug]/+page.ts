@@ -1,6 +1,11 @@
 import type { Recipe } from '$lib/types'
 import { getRecipes } from '$lib/getRecipes'
 
+export async function entries() {
+  const recipes = await getRecipes()
+  return recipes.map((r) => ({ slug: r.slug as string }))
+}
+
 export async function load({ params }): Promise<{ recipe: Recipe }> {
   const { slug } = params
 

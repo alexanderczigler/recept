@@ -3,14 +3,13 @@ import { getRecipes } from '$lib/getRecipes'
 import type { Ingredient } from '$lib/types/ingredient'
 import type { Menu } from '$lib/types/menu'
 
-export async function load({ url }): Promise<{
+export async function load(): Promise<{
   ingredients: Ingredient[]
   menu: Menu
   pantry: string[]
   sides: string[]
 }> {
-  const from: string = url.searchParams.get('from') || ''
-  const menu = await getMenu(from)
+  const menu = getMenu()
   const recipes = await getRecipes()
   const plannedRecipeSlugs = Object.values(menu).flat()
 
