@@ -25,6 +25,7 @@
     "@sveltejs/kit": "2.56.1",
     "@sveltejs/vite-plugin-svelte": "7.0.0",
     "@tailwindcss/postcss": "4.2.2",
+    "@tailwindcss/vite": "4.2.2",
     "@types/eslint": "9.6.1",
     "@types/estree": "1.0.8",
     "@types/json-schema": "7.0.15",
