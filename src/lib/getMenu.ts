@@ -1,9 +1,9 @@
 import type { Menu } from './types/menu'
 
 const MENU: Menu = {
-  '2026-05-05': ['currykyckling', 'currykyckling'],
-  '2026-05-06': ['halloumi-potatis-tzatziki'],
-  '2026-06-07': ['gnocchi-köttfärssås', 'gnocchi-köttfärssås']
+  '2026-05-12': ['gnocchi-köttfärssås', 'gnocchi-köttfärssås'],
+  '2026-05-13': ['grekisk-sallad'],
+  '2026-06-15': ['pokebowl']
 }
 
 export function getMenu(): Menu {
