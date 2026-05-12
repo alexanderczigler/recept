@@ -1,3 +1,5 @@
+import type { Recipe } from './recipes'
+
 export type Menu = {
-  [date: string]: string[]
+  [date: string]: Recipe[]
 }
