@@ -1,0 +1,65 @@
+{
+  "title": "Enkel och krämig italiensk kycklinggryta",
+  "ingredients": [
+    {
+      "name": "Kycklingfilé",
+      "quantity": 700,
+      "unit": "g"
+    },
+    {
+      "name": "Schalottenlök",
+      "quantity": 3,
+      "unit": "st"
+    },
+    {
+      "name": "Vitlök",
+      "quantity": 3,
+      "unit": "klyftor"
+    },
+    {
+      "name": "Tomatpuré",
+      "quantity": 1,
+      "unit": "msk"
+    },
+    {
+      "name": "Vitt vin",
+      "quantity": 1,
+      "unit": "dl"
+    },
+    {
+      "name": "Krossade tomater",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "name": "Grädde",
+      "quantity": 2,
+      "unit": "dl"
+    },
+    {
+      "name": "Koncentrerad kycklingfond",
+      "quantity": 2,
+      "unit": "msk"
+    },
+    {
+      "name": "Torkad oregano",
+      "quantity": 1,
+      "unit": "msk"
+    },
+    {
+      "name": "Torkad timjan",
+      "quantity": 1,
+      "unit": "tsk"
+    }
+  ],
+  "instructions": [
+    "Skär kycklingen i lagom stora bitar. Skala och finhacka lök och vitlök.",
+    "Bryn kycklingen i olivolja i en stor gryta tills den fått fin färg. Ta upp och lägg åt sidan.",
+    "Tillsätt mer olja och fräs schalottenlöken mjuk. Tillsätt vitlöken och fräs ytterligare någon minut.",
+    "Lägg tillbaka kycklingen, tillsätt tomatpuré och rör om. Häll i vinet och låt koka ihop.",
+    "Tillsätt krossade tomater, grädde, kycklingfond, oregano och timjan. Låt sjuda ca 10 minuter tills kycklingen är genomkokt. Smaka av med salt och peppar.",
+    "Toppa med färsk basilika och riven ost."
+  ],
+  "sides": ["pasta", "risoni"],
+  "pantry": ["Olivolja", "Salt", "Svartpeppar", "Färsk basilika", "Parmesanost"]
+}

@@ -13,6 +13,7 @@ export type Recipe =
   | 'grekisk-sallad'
   | 'halloumi-potatis-tzatziki'
   | 'holy-caesar'
+  | 'italiensk-kycklinggryta'
   | 'kinesisk-gurksallad'
   | 'kokoskyckling'
   | 'krämig-grönkål'
