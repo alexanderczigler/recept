@@ -28,6 +28,7 @@ export type Recipe =
   | 'pepparbiff'
   | 'pestolasagne'
   | 'pokebowl'
+  | 'quesadillas'
   | 'räkrisotto'
   | 'skaldjursomelett'
   | 'spenat-och-fetaostpaj'
