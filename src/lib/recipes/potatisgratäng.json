@@ -25,21 +25,6 @@
       "name": "Riven ost",
       "quantity": 2,
       "unit": "dl"
-    },
-    {
-      "name": "Sparris",
-      "quantity": 250,
-      "unit": "g"
-    },
-    {
-      "name": "Smör",
-      "quantity": 1,
-      "unit": "msk"
-    },
-    {
-      "name": "Pepparbiff",
-      "quantity": 800,
-      "unit": "g"
     }
   ],
   "instructions": [
@@ -48,9 +33,7 @@
     "Skala och finhacka löken.",
     "Koka upp grädde och mjölk i en kastrull. Tillsätt pressad vitlök, salt och peppar.",
     "Lägg potatisen och löken i en ugnsform och häll över gräddblandningen.",
-    "Strö över riven ost och grädda i mitten av ugnen i ca 40 minuter tills potatisen är mjuk och gratängen har fått fin färg.",
-    "Stek sparris i smör.",
-    "Stek köttet och servera med sparris och potatisgratängen."
+    "Strö över riven ost och grädda i mitten av ugnen i ca 40 minuter tills potatisen är mjuk och gratängen har fått fin färg."
   ],
   "sides": [],
   "pantry": ["Salt", "Svartpeppar"]
