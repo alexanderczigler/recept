@@ -1,12 +1,11 @@
 import type { Menu } from './types/menu'
 
 const MENU: Menu = {
-  '2026-05-24': ['pokebowl'],
-  '2026-05-25': ['italiensk-kycklinggryta'],
-  '2026-06-26': ['italiensk-kycklinggryta'],
-  '2026-06-27': ['gnocchi-köttfärssås'],
-  '2026-06-28': ['gnocchi-köttfärssås'],
-  '2026-06-29': ['potatisgratäng']
+  '2026-06-08': ['chicken-tikka-masala'],
+  '2026-06-09': ['chicken-tikka-masala'],
+  '2026-06-10': ['grekisk-sallad'],
+  '2026-06-11': ['ugnsbakad-lax'],
+  '2026-06-12': ['quesadillas'],
 }
 
 export function getMenu(): Menu {
