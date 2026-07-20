@@ -1,10 +1,10 @@
 import type { Menu } from './types/menu'
 
 const MENU: Menu = {
-  '2026-07-06': ['laxokado'],
-  '2026-07-07': ['tofu-stroganoff', 'tofu-stroganoff'],
-  '2026-07-09': ['chana-daal'],
-  '2026-07-10': ['svamprisotto']
+  '2026-07-21': ['svamprisotto'],
+  '2026-07-22': ['chana-daal', 'tofu-stroganoff'],
+  '2026-07-23': ['gnocchi-köttfärssås', 'ugnsbakad-lax'],
+  '2026-07-24': ['mexicali']
 }
 
 export function getMenu(): Menu {
