@@ -17,6 +17,6 @@ jobs:
         with:
           node-version: 24.x
       - run: |
-          pnpm install
-          pnpm run lint
-          pnpm run build
+          npm ci
+          npm run lint
+          npm run build
