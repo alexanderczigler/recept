@@ -21,3 +21,7 @@ npm run dev -- --open
 ## Recipes
 
 When you have modified the recipe collection, run `npm run generate` to update the Recipe type.
+
+## About
+
+I built this project by hand but lately I have started automating changes using agents. The main reason is that it is a fairly harmless project to experiment on and I also want everyone in the family to be able to modify the cookbook and menu using only a prompt.
