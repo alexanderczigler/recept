@@ -5,14 +5,8 @@ import type { RequestHandler } from './$types'
 export const prerender = true
 export const trailingSlash = 'never'
 
-function toIcsDate(date: string): string {
-  return date.replace(/-/g, '')
-}
-
-function addDays(date: string, days: number): string {
-  const d = new Date(`${date}T00:00:00Z`)
-  d.setUTCDate(d.getUTCDate() + days)
-  return d.toISOString().slice(0, 10)
+function toIcsDateTime(date: string, time: string): string {
+  return `${date.replace(/-/g, '')}T${time.replace(':', '')}00`
 }
 
 function escapeText(text: string): string {
@@ -35,8 +29,8 @@ export const GET: RequestHandler = async () => {
         'BEGIN:VEVENT',
         `UID:${date}@middag.czigler.se`,
         `DTSTAMP:${dtstamp}`,
-        `DTSTART;VALUE=DATE:${toIcsDate(date)}`,
-        `DTEND;VALUE=DATE:${toIcsDate(addDays(date, 1))}`,
+        `DTSTART;TZID=Europe/Stockholm:${toIcsDateTime(date, '16:30')}`,
+        `DTEND;TZID=Europe/Stockholm:${toIcsDateTime(date, '18:00')}`,
         `SUMMARY:${escapeText(`🥣 ${titles}`)}`,
         'END:VEVENT'
       ].join('\r\n')
