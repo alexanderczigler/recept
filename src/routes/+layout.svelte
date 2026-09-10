@@ -23,6 +23,9 @@
       <a href={resolve('/recipe')} class:active={$page.url.pathname.startsWith('/recipe')}>Recept</a
       >
     </li>
+    <li>
+      <a href={resolve('/menu.ics')}>Kalender</a>
+    </li>
   </ul>
 
   <content>
