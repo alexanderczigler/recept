@@ -35,6 +35,7 @@ export type Recipe =
   | 'svamprisotto'
   | 'sötpotatisbowl'
   | 'tacokväll'
+  | 'tacopaj-med-creme-fraiche'
   | 'thaiwok-kyckling'
   | 'tofu-stroganoff'
   | 'tonfisksallad'

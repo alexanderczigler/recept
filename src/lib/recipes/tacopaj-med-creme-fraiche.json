@@ -1,0 +1,74 @@
+{
+  "title": "Tacopaj med crème fraîche",
+  "ingredients": [
+    {
+      "name": "Smör",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Vetemjöl",
+      "quantity": 3.5,
+      "unit": "dl"
+    },
+    {
+      "name": "Nötfärs",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "Tacokryddmix",
+      "quantity": 1,
+      "unit": "förp"
+    },
+    {
+      "name": "Lime",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Chili",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Koriander",
+      "quantity": 1,
+      "unit": "krukor"
+    },
+    {
+      "name": "Gul lök",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Tomat",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Crème fraîche",
+      "quantity": 4,
+      "unit": "dl"
+    },
+    {
+      "name": "Lagrad ost",
+      "quantity": 150,
+      "unit": "g"
+    }
+  ],
+  "instructions": [
+    "Sätt ugnen på 225°C.",
+    "Blanda smör, vetemjöl, 3 msk vatten och salt till en deg, för hand eller i matberedare.",
+    "Tryck ut degen i en pajform och tryck upp kanterna ordentligt. Förgrädda gärna pajskalet i ca 10 minuter tills det fått lite färg.",
+    "Bryn nötfärsen i en stekpanna. Tillsätt tacokryddmixen tillsammans med vatten enligt anvisning på förpackningen.",
+    "Finhacka chilin och blanda ner den i färsen tillsammans med limeskal och limesaft. Rör ner grovhackad koriander på slutet.",
+    "Bred ut färsblandningen i pajskalet.",
+    "Skiva löken och tomaten och lägg ovanpå färsen.",
+    "Bred crème fraîchen över.",
+    "Toppa med den rivna osten.",
+    "Grädda pajen i ugnen i ca 20 minuter tills osten fått fin färg. Lägg gärna över med folie om den bryns för snabbt."
+  ],
+  "sides": [],
+  "pantry": ["Salt"]
+}
