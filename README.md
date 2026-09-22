@@ -8,7 +8,7 @@ For the longest time, I have been planning my weekly dinner menu and grocery sho
 
 The dinner menu is hard coded in `./src/lib/getMenu.ts`. So there is really little magic going on.
 
-If you want to use it, feel free to fork the project. A tip is to host it in GitHub Pages, Vercel or similar. Check out a live version here: [https://middag.czigler.se](https://middag.czigler.se).
+If you want to use it, feel free to fork the project. A tip is to host it in GitHub Pages, Vercel or similar. Check out a live version here: [https://alexanderczigler.github.io/recept/](https://alexanderczigler.github.io/recept/).
 
 ## Running
 

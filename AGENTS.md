@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents (Claude Code, Mistral, etc.) whe
 
 ## What this is
 
-"Middag" (Swedish for "dinner") is a self-hostable SvelteKit app: a recipe collection, weekly dinner planner, and grocery shopping list generator. There is no backend or database — the weekly menu and all recipes are hardcoded/checked into the repo. Live version: https://middag.czigler.se (deployed from `gh-pages`).
+"Middag" (Swedish for "dinner") is a self-hostable SvelteKit app: a recipe collection, weekly dinner planner, and grocery shopping list generator. There is no backend or database — the weekly menu and all recipes are hardcoded/checked into the repo. Live version: https://alexanderczigler.github.io/recept/ (deployed from `gh-pages`).
 
 ## Commands
 
