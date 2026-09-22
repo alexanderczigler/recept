@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-09-23@alexanderczigler.github.io
+DTSTAMP:20260922T180658Z
+DTSTART;TZID=Europe/Stockholm:20260923T163000
+DTEND;TZID=Europe/Stockholm:20260923T180000
+SUMMARY:🥣 Ugnsbakad lax\, potatis och pepparrotsås
+DESCRIPTION:Ugnsbakad lax\, potatis och pepparrotsås: https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+URL:https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-24@alexanderczigler.github.io
+DTSTAMP:20260922T180658Z
+DTSTART;TZID=Europe/Stockholm:20260924T163000
+DTEND;TZID=Europe/Stockholm:20260924T180000
+SUMMARY:🥣 Pokebowl
+DESCRIPTION:Pokebowl: https://alexanderczigler.github.io/recept/recipe/pokebowl
+URL:https://alexanderczigler.github.io/recept/recipe/pokebowl
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-25@alexanderczigler.github.io
+DTSTAMP:20260922T180658Z
+DTSTART;TZID=Europe/Stockholm:20260925T163000
+DTEND;TZID=Europe/Stockholm:20260925T180000
+SUMMARY:🥣 Tacopaj med crème fraiche
+DESCRIPTION:Tacopaj med crème fraiche: https://alexanderczigler.github.io/recept/recipe/tacopaj-med-creme-fraiche
+URL:https://alexanderczigler.github.io/recept/recipe/tacopaj-med-creme-fraiche
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-09-27@alexanderczigler.github.io
+DTSTAMP:20260922T180658Z
+DTSTART;TZID=Europe/Stockholm:20260927T163000
+DTEND;TZID=Europe/Stockholm:20260927T180000
+SUMMARY:🥣 Lax med quinoa och avokado
+DESCRIPTION:Lax med quinoa och avokado: https://alexanderczigler.github.io/recept/recipe/laxinoa
+URL:https://alexanderczigler.github.io/recept/recipe/laxinoa
+END:VEVENT
+END:VCALENDAR
