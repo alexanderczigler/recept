@@ -25,3 +25,9 @@ When you have modified the recipe collection, run `npm run generate` to update t
 ## About
 
 I built this project by hand but lately I have started automating changes using agents. The main reason is that it is a fairly harmless project to experiment on and I also want everyone in the family to be able to modify the cookbook and menu using only a prompt.
+
+### Disclaimer
+
+This software is free to use in any way you want.
+
+Any resemblance between the recipes in this repo and other recipes, published or otherwise, is purely coincidental.
