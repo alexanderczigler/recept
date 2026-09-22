@@ -1,11 +1,66 @@
 <script lang="ts">
+  import { onDestroy, onMount } from 'svelte'
   import type { PageData } from './$types'
 
   export let data: PageData
   const { recipe } = data
+
+  let wakeLock: WakeLockSentinel | null = null
+  let screenLockActive = false
+  let wakeLockSupported = false
+
+  onMount(() => {
+    wakeLockSupported = 'wakeLock' in navigator
+    document.addEventListener('visibilitychange', handleVisibilityChange)
+  })
+
+  onDestroy(() => {
+    if (typeof document === 'undefined') return
+    document.removeEventListener('visibilitychange', handleVisibilityChange)
+    wakeLock?.release()
+  })
+
+  async function handleVisibilityChange() {
+    if (screenLockActive && !wakeLock && document.visibilityState === 'visible') {
+      await requestWakeLock()
+    }
+  }
+
+  async function requestWakeLock() {
+    try {
+      wakeLock = await navigator.wakeLock.request('screen')
+      wakeLock.addEventListener('release', () => {
+        wakeLock = null
+      })
+      screenLockActive = true
+    } catch {
+      screenLockActive = false
+    }
+  }
+
+  async function toggleWakeLock() {
+    if (screenLockActive) {
+      await wakeLock?.release()
+      wakeLock = null
+      screenLockActive = false
+    } else {
+      await requestWakeLock()
+    }
+  }
 </script>
 
 <h1>{recipe.title}</h1>
+
+{#if wakeLockSupported}
+  <button
+    type="button"
+    class="wake-lock-button"
+    class:active={screenLockActive}
+    on:click={toggleWakeLock}
+  >
+    {screenLockActive ? '🔆 Skärmen hålls tänd' : '🔅 Håll skärmen tänd'}
+  </button>
+{/if}
 
 <h2>Ingredienser</h2>
 <ul>
@@ -41,6 +96,20 @@
 
 <style>
   @reference "../../../app.css";
+
+  .wake-lock-button {
+    cursor: pointer;
+    border: 1px solid var(--link-color);
+    border-radius: 999px;
+    color: var(--link-color);
+    background: transparent;
+    @apply mr-4 ml-4 px-4 py-2 text-sm;
+  }
+
+  .wake-lock-button.active {
+    color: white;
+    background: var(--link-color);
+  }
 
   ul {
     list-style-type: none;
