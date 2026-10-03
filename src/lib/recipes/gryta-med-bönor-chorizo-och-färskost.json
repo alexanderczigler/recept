@@ -1,0 +1,21 @@
+{
+  "title": "Gryta med bönor, chorizo och färskost",
+  "ingredients": [
+    { "name": "Chorizo", "quantity": 600, "unit": "g" },
+    { "name": "Gul lök", "quantity": 1, "unit": "st" },
+    { "name": "Passerade tomater", "quantity": 390, "unit": "g" },
+    { "name": "Färskost med grillad paprika", "quantity": 175, "unit": "g" },
+    { "name": "Svarta bönor, kokta", "quantity": 380, "unit": "g" },
+    { "name": "Kidneybönor, kokta", "quantity": 380, "unit": "g" },
+    { "name": "Persilja", "quantity": 0.5, "unit": "krukor" }
+  ],
+  "instructions": [
+    "Skiva korven. Skala och skiva löken. Stek korv och lök i olja i en stor gryta.",
+    "Rör ner passerade tomater och färskost och låt sjuda några minuter.",
+    "Häll av bönorna i en sil, skölj dem i kallt vatten och låt rinna av.",
+    "Rör ner bönorna och 1/2 dl vatten i grytan och låt koka ca 5 minuter. Smaka av med salt och peppar.",
+    "Strö över hackad persilja och servera med stekt ägg och bröd."
+  ],
+  "sides": ["Stekt ägg", "Bröd"],
+  "pantry": ["Olja", "Salt", "Svartpeppar"]
+}

@@ -11,6 +11,7 @@ export type Recipe =
   | 'färdig-risotto'
   | 'gnocchi-köttfärssås'
   | 'grekisk-sallad'
+  | 'gryta-med-bönor-chorizo-och-färskost'
   | 'halloumi-potatis-tzatziki'
   | 'holy-caesar'
   | 'italiensk-kycklinggryta'
