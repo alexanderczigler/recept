@@ -2,8 +2,8 @@
   "title": "Gryta med bönor, chorizo och färskost",
   "ingredients": [
     { "name": "Chorizo", "quantity": 600, "unit": "g" },
-    { "name": "Gul lök", "quantity": 1, "unit": "st" },
-    { "name": "Passerade tomater", "quantity": 390, "unit": "g" },
+    { "name": "Lök", "quantity": 1, "unit": "st" },
+    { "name": "Passerade tomater", "quantity": 1, "unit": "förp" },
     { "name": "Färskost med grillad paprika", "quantity": 175, "unit": "g" },
     { "name": "Svarta bönor, kokta", "quantity": 380, "unit": "g" },
     { "name": "Kidneybönor, kokta", "quantity": 380, "unit": "g" },

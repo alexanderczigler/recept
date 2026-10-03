@@ -41,6 +41,9 @@ shoppingList: fix pantry dedupe
 A frequent request is "add this recipe" with a link (typically ica.se or koket.se). Workflow:
 
 1. Fetch the page and adapt its recipe to this repo's schema (see the recipe JSON schema below) — translate/normalize units to the `Unit` union in `src/lib/types/unit.ts`, split staple items (salt, oil, spices) into `pantry` rather than `ingredients`, and write instructions in Swedish (translate if the source isn't).
+   Use these ingredient names and units so the shopping list can add up quantities across recipes:
+   - Onion is always `Lök` (never `Gul lök`).
+   - Passerade tomater is always `förp`, never grams: they're sold in 390 g packs, so 390 g or 400 g = 1 förp.
 2. Pick a slug (kebab-case, matching existing filenames) and check it's not already taken — list `src/lib/recipes/` and make sure no file of that name (or an obvious near-duplicate recipe) already exists. Slugs almost never change once added, so this is a quick sanity check, not a big deal either way.
 3. Create `src/lib/recipes/<slug>.json`. No need to run `npm run generate` yourself — CI regenerates `recipes.ts` as part of the `gh-pages` deploy (see Commands above); run it locally only if you're in an environment that can execute shell commands and want the typeahead/type-checking to reflect the new recipe right away.
 4. If you can run shell commands, run `npm run lint` and `npm run test`. If not, skip — CI will catch issues on push.
