@@ -24,7 +24,7 @@ npm run generate             # regenerate src/lib/types/recipes.ts from src/lib/
 
 Run a single test file with `npx vitest run path/to/file.test.ts`. Test files live alongside source, matched by `src/**/*.{test,spec}.{js,ts}` (vite.config.ts) — none exist yet.
 
-CI (`.github/workflows/pr.yaml`) runs `npm run lint` and `npm run build` on every PR. Pushes to `main` (`.github/workflows/main.yaml`) additionally run `npm run generate` before building, then force-push the `build/` output to the `gh-pages` branch — so `recipes.ts` is regenerated at publish time and an agent that can't run shell commands (e.g. from a web prompt) doesn't need to run `npm run generate` itself before committing a new recipe.
+CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint` and `npm run build` on every PR. Pushes to `main` (`.github/workflows/deploy.yaml`) run `npm run generate`, `npm run lint` and `npm run build`, then force-push the `build/` output to the `gh-pages` branch — so `recipes.ts` is regenerated at publish time and an agent that can't run shell commands (e.g. from a web prompt) doesn't need to run `npm run generate` itself before committing a new recipe.
 
 ## Commit messages
 
@@ -66,9 +66,10 @@ A frequent request is "add this recipe" with a link (typically ica.se or koket.s
   - `src/lib/types/recipe.ts` — the recipe **object** shape (ingredients, instructions, slug, title, ...).
   - `src/lib/types/recipes.ts` — an **auto-generated** union of every recipe slug string (e.g. `'daal' | 'pokebowl' | ...`), used by `Menu` in `src/lib/types/menu.ts` so editors get slug typeahead/validation in `getMenu.ts`.
   - After adding/renaming/removing a recipe JSON file, run `npm run generate` (regenerates `recipes.ts` via `scripts/generateRecipeTypes.js`) — never hand-edit that file.
-- **Routes** (SvelteKit, fully prerendered — `prerender = true` set globally in `src/routes/+layout.ts`, static adapter with `404.html` fallback):
+- **Routes** (SvelteKit, fully prerendered — `prerender = true` and `trailingSlash = 'always'` set globally in `src/routes/+layout.ts`, static adapter with `404.html` fallback):
   - `/` — weekly menu, splits "today" vs. upcoming by matching `Menu` dates against the current date.
   - `/recipe` — full recipe index; `/recipe/[slug]` — single recipe detail (`entries()` in `+page.ts` enumerates all slugs for prerendering).
   - `/shoppingList` — derived view: walks every slug referenced in `Menu`, sums ingredient quantities across recipes (matched by lowercased name + unit), and dedupes `pantry`/`sides` lists across recipes.
+  - `/menu.ics` — prerendered iCalendar feed of `Menu` (one event per day, 16:30–18:00 Europe/Stockholm, linking to each recipe). It overrides `trailingSlash = 'never'` so the file keeps its name, and builds recipe links from a hardcoded `CANONICAL_BASE_URL` rather than `BASE_PATH` — update that constant if you deploy elsewhere.
 - **Styling**: Tailwind CSS v4 via `@tailwindcss/vite`. Component `<style>` blocks that use Tailwind utilities need `@reference "<path-to>/app.css";` at the top (Svelte scoped styles don't see Tailwind by default).
-- **Base path**: `svelte.config.ts` reads `BASE_PATH` from the environment for `kit.paths.base`, so deploys under a subpath are supported; use the `resolve()` helper from `$app/paths` for internal links rather than hardcoding `/...` hrefs.
+- **Base path**: `svelte.config.js` reads `BASE_PATH` from the environment for `kit.paths.base`, so deploys under a subpath are supported; use the `resolve()` helper from `$app/paths` for internal links rather than hardcoding `/...` hrefs.
