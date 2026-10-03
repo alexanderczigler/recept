@@ -24,7 +24,9 @@
       >
     </li>
     <li>
-      <a href={resolve('/menu.ics')}>Kalender</a>
+      <a href={resolve('/menu.ics')} data-sveltekit-reload title="Kalender" aria-label="Kalender"
+        >📅</a
+      >
     </li>
   </ul>
 
