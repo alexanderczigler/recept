@@ -9,7 +9,7 @@ This file provides guidance to AI coding agents (Claude Code, Mistral, etc.) whe
 ## Commands
 
 ```shell
-nvm use && npm install       # node version pinned in .nvmrc (24), engine-strict in .npmrc
+nvm use && npm install       # node version pinned in .nvmrc (26), engine-strict in .npmrc
 npm run dev -- --open        # dev server
 npm run build                # production build (adapter-static) -> ./build
 npm run preview              # preview the production build
