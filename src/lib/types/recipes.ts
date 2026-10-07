@@ -31,6 +31,7 @@ export type Recipe =
   | 'potatisgratäng'
   | 'quesadillas'
   | 'räkrisotto'
+  | 'saffranspasta-med-kräftstjärtar'
   | 'skaldjursomelett'
   | 'spenat-och-fetaostpaj'
   | 'svamprisotto'
