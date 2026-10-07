@@ -1,4 +1,4 @@
-import type { Recipe } from '$lib/types'
+import type { Recipe } from '$lib/types/recipe'
 import { getRecipes } from '$lib/getRecipes'
 
 export async function entries() {

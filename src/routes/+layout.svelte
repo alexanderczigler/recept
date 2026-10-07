@@ -12,16 +12,15 @@
 <main>
   <ul class="menu">
     <li>
-      <a href={resolve('/')} class:active={$page.url.pathname === '/'}>Meny</a>
+      <a href={resolve('/')} class:active={$page.route.id === '/'}>Meny</a>
     </li>
     <li>
-      <a href={resolve('/shoppingList')} class:active={$page.url.pathname === '/shoppingList'}
+      <a href={resolve('/shoppingList')} class:active={$page.route.id === '/shoppingList'}
         >Veckohandling</a
       >
     </li>
     <li>
-      <a href={resolve('/recipe')} class:active={$page.url.pathname.startsWith('/recipe')}>Recept</a
-      >
+      <a href={resolve('/recipe')} class:active={$page.route.id?.startsWith('/recipe')}>Recept</a>
     </li>
     <li>
       <a href={resolve('/menu.ics')} data-sveltekit-reload title="Kalender" aria-label="Kalender"
