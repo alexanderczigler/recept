@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-10-12@alexanderczigler.github.io
+DTSTAMP:20261007T125042Z
+DTSTART;TZID=Europe/Stockholm:20261012T163000
+DTEND;TZID=Europe/Stockholm:20261012T180000
+SUMMARY:🥣 Currykyckling med ris
+DESCRIPTION:Currykyckling med ris: https://alexanderczigler.github.io/recept/recipe/currykyckling
+URL:https://alexanderczigler.github.io/recept/recipe/currykyckling
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-14@alexanderczigler.github.io
+DTSTAMP:20261007T125042Z
+DTSTART;TZID=Europe/Stockholm:20261014T163000
+DTEND;TZID=Europe/Stockholm:20261014T180000
+SUMMARY:🥣 Ugnsbakad lax\, potatis och pepparrotsås
+DESCRIPTION:Ugnsbakad lax\, potatis och pepparrotsås: https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+URL:https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16@alexanderczigler.github.io
+DTSTAMP:20261007T125042Z
+DTSTART;TZID=Europe/Stockholm:20261016T163000
+DTEND;TZID=Europe/Stockholm:20261016T180000
+SUMMARY:🥣 Risotto med skogschampinjoner
+DESCRIPTION:Risotto med skogschampinjoner: https://alexanderczigler.github.io/recept/recipe/svamprisotto
+URL:https://alexanderczigler.github.io/recept/recipe/svamprisotto
+END:VEVENT
+END:VCALENDAR
