@@ -66,10 +66,6 @@
 
 <h1>Veckohandling</h1>
 
-<button class="copy" on:click={copyMarkdown}>
-  {copied ? 'Kopierat!' : 'Kopiera som checklista'}
-</button>
-
 <h2>Ingredienser</h2>
 {#if ingredients.length > 0}
   <ul class="shopping-list">
@@ -128,6 +124,10 @@
   {/each}
 </ul>
 
+<button class="copy" on:click={copyMarkdown}>
+  {copied ? 'Kopierat!' : 'Kopiera markdown'}
+</button>
+
 <style>
   @reference "../../app.css";
 
@@ -135,7 +135,7 @@
     color: var(--link-color);
     cursor: pointer;
 
-    @apply rounded border px-3 py-1;
+    @apply mt-6 rounded border px-3 py-1;
   }
 
   .copy:hover {
