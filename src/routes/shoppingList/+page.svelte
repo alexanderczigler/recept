@@ -27,11 +27,11 @@
 <h2>Ingredienser</h2>
 {#if ingredients.length > 0}
   <ul class="shopping-list">
-    {#each ingredients as { name, quantity, unit } (name)}
+    {#each ingredients as { name, quantity, unit } (`${name}|${unit}`)}
       <li class="shopping-item">
         <label>
-          <input type="checkbox" on:change={() => toggleChecked(name)} />
-          <span class:checked={checkedItems.has(name)}>
+          <input type="checkbox" on:change={() => toggleChecked(`${name}|${unit}`)} />
+          <span class:checked={checkedItems.has(`${name}|${unit}`)}>
             {name}
             <span class="quantity-unit">
               ({quantity}
