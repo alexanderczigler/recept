@@ -1,5 +1,6 @@
 import { getMenu } from '$lib/getMenu'
 import { getRecipes } from '$lib/getRecipes'
+import { getStaples } from '$lib/getStaples'
 import type { Ingredient } from '$lib/types/ingredient'
 import type { Menu } from '$lib/types/menu'
 
@@ -8,6 +9,7 @@ export async function load(): Promise<{
   menu: Menu
   pantry: string[]
   sides: string[]
+  staples: string[]
 }> {
   const menu = getMenu()
   const recipes = await getRecipes()
@@ -53,5 +55,5 @@ export async function load(): Promise<{
   ingredients.sort((a, b) => a.name.localeCompare(b.name))
   pantry.sort((a, b) => a.localeCompare(b))
 
-  return { ingredients, menu, pantry, sides }
+  return { ingredients, menu, pantry, sides, staples: getStaples() }
 }

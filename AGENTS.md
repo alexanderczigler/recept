@@ -62,6 +62,7 @@ Requests like "planera in X på söndag" edit `MENU` in `src/lib/getMenu.ts`:
 
 - **Data model, not a CMS.** All content lives in source:
   - `src/lib/getMenu.ts` — the weekly plan, a hardcoded `Menu` object (`{ [isoDate: string]: slug[] }`, one or more recipe slugs per day).
+  - `src/lib/getStaples.ts` — a fixed list of household items (fruit, nuts, dairy, detergent, ...) that's always shown last on the shopping list under "Alltid hemma", regardless of the menu.
   - `src/lib/recipes/<slug>.json` — one file per recipe, slug = filename without `.json`. Instructions are written in Swedish, matching the rest of the UI text. Schema:
     ```json
     {
@@ -81,7 +82,7 @@ Requests like "planera in X på söndag" edit `MENU` in `src/lib/getMenu.ts`:
 - **Routes** (SvelteKit, fully prerendered — `prerender = true` and `trailingSlash = 'always'` set globally in `src/routes/+layout.ts`, static adapter with `404.html` fallback):
   - `/` — weekly menu, splits "today" vs. upcoming by matching `Menu` dates against the current date.
   - `/recipe` — full recipe index; `/recipe/[slug]` — single recipe detail (`entries()` in `+page.ts` enumerates all slugs for prerendering).
-  - `/shoppingList` — derived view: walks every slug referenced in `Menu`, sums ingredient quantities across recipes (matched by lowercased name + unit), and dedupes `pantry`/`sides` lists across recipes.
+  - `/shoppingList` — derived view: walks every slug referenced in `Menu`, sums ingredient quantities across recipes (matched by lowercased name + unit), dedupes `pantry`/`sides` lists across recipes, and appends the `getStaples()` list. Section headings: Ingredienser, Från skafferiet (`pantry`), Valfria tillbehör (`sides`), Alltid hemma (staples).
   - `/menu.ics` — prerendered iCalendar feed of `Menu` (one event per day, 16:30–18:00 Europe/Stockholm, linking to each recipe). It overrides `trailingSlash = 'never'` so the file keeps its name, and builds recipe links from a hardcoded `CANONICAL_BASE_URL` rather than `BASE_PATH` — update that constant if you deploy elsewhere.
 - **Styling**: Tailwind CSS v4 via `@tailwindcss/vite`. Component `<style>` blocks that use Tailwind utilities need `@reference "<path-to>/app.css";` at the top (Svelte scoped styles don't see Tailwind by default).
 - **Base path**: `svelte.config.js` reads `BASE_PATH` from the environment for `kit.paths.base`, so deploys under a subpath are supported; use the `resolve()` helper from `$app/paths` for internal links rather than hardcoding `/...` hrefs.

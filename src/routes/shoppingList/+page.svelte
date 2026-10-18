@@ -7,6 +7,7 @@
   const ingredients = data.ingredients as Ingredient[]
   const pantry = data.pantry as string[]
   const sides = data.sides as string[]
+  const staples = data.staples as string[]
 
   // Lokal state för avkryssade ingredienser i inköpslistan
   const checkedItems: SvelteSet<string> = new SvelteSet()
@@ -45,7 +46,7 @@
   <p>Inga ingredienser hittades för veckomenyn.</p>
 {/if}
 
-<h2>Alltid hemma</h2>
+<h2>Från skafferiet</h2>
 <ul class="pantry">
   {#each pantry as item (item)}
     <li class="pantry-item">
@@ -61,6 +62,18 @@
 <ul class="sides">
   {#each sides as item (item)}
     <li class="sides-item">
+      <label>
+        <input type="checkbox" on:change={() => toggleChecked(item)} />
+        {item}
+      </label>
+    </li>
+  {/each}
+</ul>
+
+<h2>Alltid hemma</h2>
+<ul class="staples">
+  {#each staples as item (item)}
+    <li class="staples-item">
       <label>
         <input type="checkbox" on:change={() => toggleChecked(item)} />
         {item}
