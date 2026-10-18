@@ -1,0 +1,52 @@
+{
+  "title": "Sötpotatis- och morotsoppa",
+  "ingredients": [
+    {
+      "name": "Sötpotatis",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Morot",
+      "quantity": 3,
+      "unit": "st"
+    },
+    {
+      "name": "Lök",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Vitlök",
+      "quantity": 1,
+      "unit": "klyftor"
+    },
+    {
+      "name": "Kokosmjölk",
+      "quantity": 250,
+      "unit": "ml"
+    }
+  ],
+  "instructions": [
+    "Skala och grovhacka lök, vitlök, sötpotatis och morötter. Skala och hacka 3 cm färsk ingefära.",
+    "Smält smör i en kastrull och fräs löken tills den är mjuk.",
+    "Tillsätt vitlök, sötpotatis, morötter och ingefära.",
+    "Häll på 3–4 dl vatten och två tredjedelar av kokosmjölken, precis så att grönsakerna täcks. Mer vätska kan tillsättas efter mixningen.",
+    "Smula ner 1 grönsaksbuljongtärning och tillsätt 1 tsk cayennepeppar, 1 tsk vitlökspulver, ½ tsk paprikapulver och ½ tsk gurkmeja. Salta och peppra.",
+    "Låt sjuda i 15–20 minuter tills rotfrukterna är mjuka.",
+    "Rosta under tiden pumpafröna i en torr stekpanna tills de börjar poppa.",
+    "Mixa soppan slät. Späd med lite vatten om den är för tjock.",
+    "Servera toppad med en skvätt av den resterande kokosmjölken och de rostade pumpafröna."
+  ],
+  "sides": ["Färsk ingefära", "Pumpafrön"],
+  "pantry": [
+    "Grönsaksbuljongtärning",
+    "Cayennepeppar",
+    "Vitlökspulver",
+    "Paprikapulver",
+    "Gurkmeja",
+    "Smör",
+    "Salt",
+    "Svartpeppar"
+  ]
+}

@@ -36,6 +36,7 @@ export type Recipe =
   | 'skaldjursomelett'
   | 'spenat-och-fetaostpaj'
   | 'svamprisotto'
+  | 'sötpotatis-och-morotsoppa'
   | 'sötpotatisbowl'
   | 'tacokväll'
   | 'tacopaj-med-creme-fraiche'
