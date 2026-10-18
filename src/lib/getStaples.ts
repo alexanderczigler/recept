@@ -14,7 +14,8 @@ const STAPLES: string[] = [
   'Skivad ost',
   'Sill',
   'Makrill',
-  'Havregryn'
+  'Havregryn',
+  'Basmatiris'
 ]
 
 export function getStaples(): string[] {
