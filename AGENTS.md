@@ -24,7 +24,7 @@ npm run generate             # regenerate src/lib/types/recipes.ts from src/lib/
 
 Run a single test file with `npx vitest run path/to/file.test.ts`. Test files live alongside source, matched by `src/**/*.{test,spec}.{js,ts}` (vite.config.ts) — none exist yet.
 
-CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint` and `npm run build` on every PR. Pushes to `main` (`.github/workflows/deploy.yaml`) run `npm run generate`, `npm run lint` and `npm run build`, then force-push the `build/` output to the `gh-pages` branch — so `recipes.ts` is regenerated at publish time and an agent that can't run shell commands (e.g. from a web prompt) doesn't need to run `npm run generate` itself before committing a new recipe.
+CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint` and `npm run build` on every PR. Pushes to `main` (`.github/workflows/deploy.yaml`) run `npm run generate`, `npm run lint` and `npm run build`, then force-push the `build/` output to the `gh-pages` branch. That keeps the deployed site correct, but the regenerated `recipes.ts` is never committed back to `main` — so whenever a recipe is added, renamed or removed, run `npm run generate` and commit the updated `src/lib/types/recipes.ts` together with the recipe. Otherwise the checked-in slug union goes stale and `npm run check` fails as soon as `getMenu.ts` references the new slug.
 
 ## Commit messages
 
@@ -45,7 +45,7 @@ A frequent request is "add this recipe" with a link (typically ica.se or koket.s
    - Onion is always `Lök` (never `Gul lök`).
    - Passerade and krossade tomater are always `förp`, never grams: they're sold in 390 g packs, so 390–400 g = 1 förp (round larger amounts up, e.g. 500 g = 2 förp).
 2. Pick a slug (kebab-case, matching existing filenames) and check it's not already taken — list `src/lib/recipes/` and make sure no file of that name (or an obvious near-duplicate recipe) already exists. Slugs almost never change once added, so this is a quick sanity check, not a big deal either way.
-3. Create `src/lib/recipes/<slug>.json`. No need to run `npm run generate` yourself — CI regenerates `recipes.ts` as part of the `gh-pages` deploy (see Commands above); run it locally only if you're in an environment that can execute shell commands and want the typeahead/type-checking to reflect the new recipe right away.
+3. Create `src/lib/recipes/<slug>.json`, then run `npm run generate` and include the updated `src/lib/types/recipes.ts` in the same commit (see Commands above). If you can't run shell commands, say so in your reply so the user can run it — don't hand-edit `recipes.ts`.
 4. If you can run shell commands, run `npm run lint` and `npm run test`. If not, skip — CI will catch issues on push.
 5. Commit with a context-based message, e.g. `recipes: add wallenbergare`, and push.
 
