@@ -20,9 +20,55 @@
       checkedItems.add(itemName)
     }
   }
+
+  let copied = false
+
+  function capitalize(text: string) {
+    return text.charAt(0).toUpperCase() + text.slice(1)
+  }
+
+  function checklist(items: { key: string; label: string }[]) {
+    return items
+      .map(({ key, label }) => `- [${checkedItems.has(key) ? 'x' : ' '}] ${capitalize(label)}`)
+      .join('\n')
+  }
+
+  // Bygger hela veckohandlingen som en Markdown-checklista (t.ex. för Obsidian)
+  function toMarkdown() {
+    const plain = (list: string[]) => list.map((item) => ({ key: item, label: item }))
+    const sections: [string, { key: string; label: string }[]][] = [
+      [
+        'Ingredienser',
+        ingredients.map(({ name, quantity, unit }) => ({
+          key: `${name}|${unit}`,
+          label: `${name} (${quantity} ${unit})`
+        }))
+      ],
+      ['Från skafferiet', plain(pantry)],
+      ['Valfria tillbehör', plain(sides)],
+      ['Alltid hemma', plain(staples)]
+    ]
+
+    return [
+      '# Veckohandling',
+      ...sections
+        .filter(([, items]) => items.length > 0)
+        .map(([heading, items]) => `## ${heading}\n\n${checklist(items)}`)
+    ].join('\n\n')
+  }
+
+  async function copyMarkdown() {
+    await navigator.clipboard.writeText(toMarkdown() + '\n')
+    copied = true
+    setTimeout(() => (copied = false), 2000)
+  }
 </script>
 
 <h1>Veckohandling</h1>
+
+<button class="copy" on:click={copyMarkdown}>
+  {copied ? 'Kopierat!' : 'Kopiera som checklista'}
+</button>
 
 <h2>Ingredienser</h2>
 {#if ingredients.length > 0}
@@ -83,6 +129,19 @@
 </ul>
 
 <style>
+  @reference "../../app.css";
+
+  .copy {
+    color: var(--link-color);
+    cursor: pointer;
+
+    @apply rounded border px-3 py-1;
+  }
+
+  .copy:hover {
+    color: var(--link-hover-color);
+  }
+
   .pantry,
   .shopping-list,
   .sides {
