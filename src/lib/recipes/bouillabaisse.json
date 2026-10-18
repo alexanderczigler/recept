@@ -37,11 +37,6 @@
       "unit": "pkt"
     },
     {
-      "name": "Grönsaksbuljongtärning",
-      "quantity": 2,
-      "unit": "st"
-    },
-    {
       "name": "Körsbärstomater",
       "quantity": 1,
       "unit": "pkt"
@@ -122,7 +117,7 @@
     "Skala och hacka lök och vitlök. Strimla fänkål, morötter och purjolök.",
     "Hetta upp olivolja i en stor kastrull och fräs lök och grönsaker tills de mjuknar.",
     "Tillsätt tomatpuré och fräs ytterligare någon minut.",
-    "Häll i 1 liter kokande vatten, grädde, buljongtärningar, samtliga kryddor och pastis.",
+    "Häll i 1 liter kokande vatten, grädde, 2 grönsaksbuljongtärningar, samtliga kryddor och pastis.",
     "Halvera körsbärstomaterna och lägg i soppan.",
     "Låt soppan sjuda under lock i 50 min. Rör om då och då.",
     "Under tiden, halvera potatisarna, pensla med olivolja och rosta i ugnen i cirka 25 minuter tills de är gyllene.",
@@ -130,6 +125,6 @@
     "När soppan börjar bli klar, pressa i saften från en halv apelsin.",
     "För bönaiolin: Mixa hela förpackningen vita bönor med majonnäsen och en rostad vitlöksklyfta tills slät. Smaka av med salt och peppar."
   ],
-  "sides": ["Baguette"],
+  "sides": ["Baguette", "Grönsaksbuljongtärning"],
   "pantry": ["Olivolja", "Salt", "Svartpeppar"]
 }

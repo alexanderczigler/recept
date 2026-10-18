@@ -43,7 +43,7 @@
     }
   ],
   "instructions": [
-    "Koka matvete enligt anvisning på förpackningen tillsammans med en grönsaksbuljongtärning.",
+    "Koka matvete enligt anvisning på förpackningen tillsammans med 1 grönsaksbuljongtärning.",
     "Skala och finhacka lök och vitlök. Stek dem mjuka i olja på medelvärme.",
     "Krossa eller finhacka grönpepparn. Skär champinjoner och grönkål i mindre bitar.",
     "Tillsätt grönpeppar, champinjoner och grönkål till stekpannan och stek tills de mjuknar.",
@@ -51,6 +51,6 @@
     "Tillsätt de kokta vita bönorna och smaka av med salt eller extra soja.",
     "Servera såsen med det kokta matvetet."
   ],
-  "sides": [],
-  "pantry": ["Matvete", "Grönsaksbuljongtärning", "olivolja", "Salt"]
+  "sides": ["Grönsaksbuljongtärning"],
+  "pantry": ["Matvete", "olivolja", "Salt"]
 }

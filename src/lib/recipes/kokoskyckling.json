@@ -45,11 +45,6 @@
       "name": "Strösocker",
       "quantity": 0.5,
       "unit": "tsk"
-    },
-    {
-      "name": "Kycklingbuljongtärning",
-      "quantity": 1,
-      "unit": "st"
     }
   ],
   "instructions": [
@@ -59,10 +54,10 @@
     "Ansa och skär paprikan och broccolin i mindre bitar. Strimla salladslöken.",
     "Hetta upp olja i en gryta och stek röd currypasta i några sekunder.",
     "Tillsätt fisksås och strösocker. Justera mängden currypasta och fisksås efter smak för önskad hetta och sälta. Låt puttra i några minuter.",
-    "Tillsätt den marinerade kycklingen, grönsakerna och resterande kokosgrädde. Smula ner kycklingbuljongtärningen.",
+    "Tillsätt den marinerade kycklingen, grönsakerna och resterande kokosgrädde. Smula ner 1 kycklingbuljongtärning.",
     "Koka ihop i 5–10 minuter tills kycklingen är genomstekt och grönsakerna är mjuka.",
     "Servera grytan med det kokta jasminriset."
   ],
-  "sides": ["Friterade naanbröd"],
+  "sides": ["Friterade naanbröd", "Kycklingbuljongtärning"],
   "pantry": ["ris", "olivolja", "salt", "svartpeppar", "chiliflakes", "sambal oelek"]
 }

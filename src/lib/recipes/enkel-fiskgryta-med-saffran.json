@@ -47,16 +47,6 @@
       "unit": "dl"
     },
     {
-      "name": "Fiskbuljongtärning",
-      "quantity": 1,
-      "unit": "st"
-    },
-    {
-      "name": "Grönsaksbuljongtärning",
-      "quantity": 1,
-      "unit": "st"
-    },
-    {
       "name": "Vitt vin",
       "quantity": 1,
       "unit": "dl"
@@ -69,11 +59,11 @@
   ],
   "instructions": [
     "Skala och skär palsternacka, morötter och potatis i bitar. Skär fänkålen i bitar och finhacka vitlöken. Strimla purjolöken och hacka dillen, men lägg dem åt sidan.",
-    "Lägg rotfrukter, potatis, fänkål och vitlök i en gryta. Häll på 7 dl vatten och tillsätt buljongtärningarna, saffran och vin.",
+    "Lägg rotfrukter, potatis, fänkål och vitlök i en gryta. Häll på 7 dl vatten och tillsätt 1 fiskbuljongtärning, 1 grönsaksbuljongtärning, saffran och vin.",
     "Koka upp, sänk värmen och låt sjuda i 15–20 minuter.",
     "Skär laxen i bitar och lägg ner den i grytan tillsammans med kokosmjölk, purjolök och dill. Låt sjuda i cirka 10 minuter tills laxen är genomkokt.",
     "Smaka av med salt, peppar och cayennepeppar och servera."
   ],
-  "sides": ["Frysta räkor", "Fröknäcke"],
+  "sides": ["Frysta räkor", "Fröknäcke", "Fiskbuljongtärning", "Grönsaksbuljongtärning"],
   "pantry": ["Salt", "Svartpeppar", "Cayennepeppar"]
 }

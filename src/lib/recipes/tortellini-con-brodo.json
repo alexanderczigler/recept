@@ -7,20 +7,15 @@
       "unit": "påse"
     },
     {
-      "name": "buljongtärning",
-      "quantity": 2,
-      "unit": "st"
-    },
-    {
       "name": "parmesan",
       "quantity": 0.5,
       "unit": "dl"
     }
   ],
   "instructions": [
-    "Koka upp 1 liter vatten med buljongtärningarna.",
+    "Koka upp 1 liter vatten med 2 buljongtärningar.",
     "Häll i tortellinin och koka ett par minuter kortare än paketets instruktioner.",
     "Servera tortellinin i buljongen och smaksätt med salt, peppar och parmesan."
   ],
-  "sides": []
+  "sides": ["Buljongtärning"]
 }
