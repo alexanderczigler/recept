@@ -1,0 +1,60 @@
+{
+  "title": "Tom kha gai med tofu",
+  "ingredients": [
+    {
+      "name": "Kokosmjölk",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "Kokosgrädde",
+      "quantity": 250,
+      "unit": "ml"
+    },
+    {
+      "name": "Citrongräs",
+      "quantity": 2,
+      "unit": "st"
+    },
+    {
+      "name": "Schalottenlök",
+      "quantity": 3,
+      "unit": "st"
+    },
+    {
+      "name": "Röd chilipeppar",
+      "quantity": 2,
+      "unit": "st"
+    },
+    {
+      "name": "Lime",
+      "quantity": 1,
+      "unit": "st"
+    },
+    {
+      "name": "Ostronskivling",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "Fast tofu",
+      "quantity": 400,
+      "unit": "g"
+    },
+    {
+      "name": "Koriander",
+      "quantity": 1,
+      "unit": "krukor"
+    }
+  ],
+  "instructions": [
+    "Skiva schalottenlöken och 1 chili tunt. Skiva 3 cm färsk ingefära. Riv skalet från limen och pressa 1 msk limesaft. Riv ostronskivlingen i bitar och tärna tofun.",
+    "Koka upp 5 dl vatten med 1 grönsaksbuljongtärning, kokosmjölken och kokosgrädden i en kastrull.",
+    "Krossa citrongräset med baksidan av en kniv. Lägg ner det i kastrullen tillsammans med schalottenlök, chili, ingefära och limeskal. Låt sjuda i 5 minuter.",
+    "Rör ner ostronskivling och tofu och låt sjuda i ytterligare 10 minuter.",
+    "Smaka av med 2 msk ljus soja, 1 msk limesaft, 1 tsk strösocker och salt.",
+    "Skiva den andra chilin tunt. Fördela soppan i skålar och toppa med chili och färsk koriander."
+  ],
+  "sides": ["Färsk ingefära", "Ljus soja", "Grönsaksbuljongtärning"],
+  "pantry": ["Strösocker", "Salt"]
+}

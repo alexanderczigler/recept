@@ -42,6 +42,7 @@ export type Recipe =
   | 'tacopaj-med-creme-fraiche'
   | 'thaiwok-kyckling'
   | 'tofu-stroganoff'
+  | 'tom-kha-gai'
   | 'tonfisksallad'
   | 'tortellini-con-brodo'
   | 'ugnsbakad-falukorv'
