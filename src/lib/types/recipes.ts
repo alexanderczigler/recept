@@ -8,6 +8,7 @@ export type Recipe =
   | 'chicken-tikka-masala'
   | 'currykyckling'
   | 'daal'
+  | 'enkel-fiskgryta-med-saffran'
   | 'färdig-risotto'
   | 'gnocchi-köttfärssås'
   | 'grekisk-sallad'
