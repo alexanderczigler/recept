@@ -49,6 +49,14 @@ A frequent request is "add this recipe" with a link (typically ica.se or koket.s
 4. If you can run shell commands, run `npm run lint` and `npm run test`. If not, skip — CI will catch issues on push.
 5. Commit with a context-based message, e.g. `recipes: add wallenbergare`, and push.
 
+## Common task: plan the menu
+
+Requests like "planera in X på söndag" edit `MENU` in `src/lib/getMenu.ts`:
+
+1. Remove every date before today. Keep today and future dates, then add the new ones. This also keeps past dinners out of the shopping list, which sums every recipe in `MENU`.
+2. Match the request to an existing slug in `src/lib/recipes/`. If several recipes fit (e.g. two curry dishes), pick the closest and mention the alternatives in your reply.
+3. Run `npm run check` (it validates the slugs against `recipes.ts`) and commit as `menu: plan week`.
+
 ## Architecture
 
 - **Data model, not a CMS.** All content lives in source:
