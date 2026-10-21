@@ -44,6 +44,7 @@ A frequent request is "add this recipe" with a link (typically ica.se or koket.s
    Use these ingredient names and units so the shopping list can add up quantities across recipes:
    - Onion is always `Lök` (never `Gul lök`).
    - Passerade and krossade tomater are always `förp`, never grams: they're sold in 390 g packs, so 390–400 g = 1 förp (round larger amounts up, e.g. 500 g = 2 förp).
+   - Dried spices (gurkmeja, spiskummin, cayennepeppar, mald koriander, senapsfrön, ...) go in `pantry`, never `ingredients`, even when the source gives an amount. Put the amount in the instruction step instead, e.g. "Tillsätt 1 tsk gurkmeja och 1 krm cayennepeppar".
    - Buljongtärningar (e.g. `Grönsaksbuljongtärning`, `Fiskbuljongtärning`) go in `sides`, not `ingredients` or `pantry`, so the shopping list shows them without a unit. Put the amount in the instruction step instead, e.g. "Smula ner 1 grönsaksbuljongtärning".
 2. Pick a slug (kebab-case, matching existing filenames) and check it's not already taken — list `src/lib/recipes/` and make sure no file of that name (or an obvious near-duplicate recipe) already exists. Slugs almost never change once added, so this is a quick sanity check, not a big deal either way.
 3. Create `src/lib/recipes/<slug>.json`, then run `npm run generate` and include the updated `src/lib/types/recipes.ts` in the same commit (see Commands above). If you can't run shell commands, say so in your reply so the user can run it — don't hand-edit `recipes.ts`.
