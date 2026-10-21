@@ -1,0 +1,34 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-10-18@alexanderczigler.github.io
+DTSTAMP:20261021T195130Z
+DTSTART;TZID=Europe/Stockholm:20261018T163000
+DTEND;TZID=Europe/Stockholm:20261018T180000
+SUMMARY:🥣 Enkel fiskgryta med saffran\, Tom kha gai med tofu\, Tom kha gai med tofu
+DESCRIPTION:Enkel fiskgryta med saffran: https://alexanderczigler.github.io/recept/recipe/enkel-fiskgryta-med-saffran\nTom kha gai med tofu: https://alexanderczigler.github.io/recept/recipe/tom-kha-gai\nTom kha gai med tofu: https://alexanderczigler.github.io/recept/recipe/tom-kha-gai
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-19@alexanderczigler.github.io
+DTSTAMP:20261021T195130Z
+DTSTART;TZID=Europe/Stockholm:20261019T163000
+DTEND;TZID=Europe/Stockholm:20261019T180000
+SUMMARY:🥣 Sötpotatis- och morotsoppa
+DESCRIPTION:Sötpotatis- och morotsoppa: https://alexanderczigler.github.io/recept/recipe/sötpotatis-och-morotsoppa
+URL:https://alexanderczigler.github.io/recept/recipe/sötpotatis-och-morotsoppa
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20@alexanderczigler.github.io
+DTSTAMP:20261021T195130Z
+DTSTART;TZID=Europe/Stockholm:20261020T163000
+DTEND;TZID=Europe/Stockholm:20261020T180000
+SUMMARY:🥣 Chana daal
+DESCRIPTION:Chana daal: https://alexanderczigler.github.io/recept/recipe/chana-daal
+URL:https://alexanderczigler.github.io/recept/recipe/chana-daal
+END:VEVENT
+END:VCALENDAR
