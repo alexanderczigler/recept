@@ -15,6 +15,7 @@ export type Recipe =
   | 'gryta-med-bönor-chorizo-och-färskost'
   | 'halloumi-potatis-tzatziki'
   | 'holy-caesar'
+  | 'indiskt-kryddad-lammgryta'
   | 'italiensk-kycklinggryta'
   | 'kinesisk-gurksallad'
   | 'kokoskyckling'

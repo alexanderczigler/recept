@@ -1,0 +1,65 @@
+{
+  "title": "Indiskt kryddad lammgryta",
+  "ingredients": [
+    {
+      "name": "Benfritt lammkött (t.ex. steken)",
+      "quantity": 500,
+      "unit": "g"
+    },
+    {
+      "name": "Lök",
+      "quantity": 2,
+      "unit": "st"
+    },
+    {
+      "name": "Senapsfrön, bruna",
+      "quantity": 1,
+      "unit": "msk"
+    },
+    {
+      "name": "Gurkmeja",
+      "quantity": 1,
+      "unit": "tsk"
+    },
+    {
+      "name": "Koriander, mald",
+      "quantity": 1,
+      "unit": "tsk"
+    },
+    {
+      "name": "Spiskummin, mald",
+      "quantity": 1,
+      "unit": "tsk"
+    },
+    {
+      "name": "Cayennepeppar",
+      "quantity": 1,
+      "unit": "krm"
+    },
+    {
+      "name": "Matyoghurt",
+      "quantity": 2,
+      "unit": "dl"
+    },
+    {
+      "name": "Vetemjöl",
+      "quantity": 2,
+      "unit": "tsk"
+    },
+    {
+      "name": "Haricots verts, djupfrysta",
+      "quantity": 250,
+      "unit": "g"
+    }
+  ],
+  "instructions": [
+    "Skär köttet i ca 1½ x 1½ cm stora tärningar. Skala och grovhacka löken.",
+    "Stek kött och lök i 2 msk olja i omgångar i en stekpanna och lägg över i en gryta.",
+    "Tillsätt alla kryddorna, 1 tsk salt och ½–1 krm cayennepeppar efter smak.",
+    "Lös 1 köttbuljongtärning i 2½ dl vatten och häll över. Låt köttet koka under lock ca 20 min tills köttet känns mört.",
+    "Blanda matyoghurten med mjölet. Rör ner blandningen i grytan och tillsätt bönorna. Låt puttra utan lock ca 5 min.",
+    "Servera med basmatiris och mangochutney."
+  ],
+  "sides": ["Mangochutney", "Köttbuljongtärning"],
+  "pantry": ["Olja", "Salt", "Basmatiris"]
+}
