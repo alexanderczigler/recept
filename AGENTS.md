@@ -20,6 +20,7 @@ npm run format                # prettier --write .
 npm run test                 # vitest run (single run)
 npm run test:unit            # vitest (watch mode)
 npm run generate             # regenerate src/lib/types/recipes.ts from src/lib/recipes/*.json
+npm run smoke-test           # lint + build + test
 ```
 
 Run a single test file with `npx vitest run path/to/file.test.ts`. Test files live alongside source, matched by `src/**/*.{test,spec}.{js,ts}` (vite.config.ts), e.g. `src/lib/getStaples.test.ts`.
