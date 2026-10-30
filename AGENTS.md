@@ -25,7 +25,7 @@ npm run smoke-test           # lint + build + test
 
 Run a single test file with `npx vitest run path/to/file.test.ts`. Test files live alongside source, matched by `src/**/*.{test,spec}.{js,ts}` (vite.config.ts), e.g. `src/lib/getStaples.test.ts`.
 
-CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint` and `npm run build` on every PR. Pushes to `main` (`.github/workflows/deploy.yaml`) run `npm run generate`, `npm run lint` and `npm run build`, then force-push the `build/` output to the `gh-pages` branch. That keeps the deployed site correct, but the regenerated `recipes.ts` is never committed back to `main` — so whenever a recipe is added, renamed or removed, run `npm run generate` and commit the updated `src/lib/types/recipes.ts` together with the recipe. Otherwise the checked-in slug union goes stale and `npm run check` fails as soon as `getMenu.ts` references the new slug.
+CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint`, `npm run build` and `npm run test` on every PR. Pushes to `main` (`.github/workflows/deploy.yaml`) run `npm run generate`, `npm run lint` and `npm run build`, then force-push the `build/` output to the `gh-pages` branch. That keeps the deployed site correct, but the regenerated `recipes.ts` is never committed back to `main` — so whenever a recipe is added, renamed or removed, run `npm run generate` and commit the updated `src/lib/types/recipes.ts` together with the recipe. Otherwise the checked-in slug union goes stale and `npm run check` fails as soon as `getMenu.ts` references the new slug.
 
 ## Commit messages
 
