@@ -63,7 +63,7 @@ Requests like "planera in X på söndag" edit `MENU` in `src/lib/getMenu.ts`:
 
 - **Data model, not a CMS.** All content lives in source:
   - `src/lib/getMenu.ts` — the weekly plan, a hardcoded `Menu` object (`{ [isoDate: string]: slug[] }`, one or more recipe slugs per day).
-  - `src/lib/getStaples.ts` — a fixed list of household items (fruit, nuts, dairy, detergent, ...) that's always shown last on the shopping list under "Alltid hemma", regardless of the menu.
+  - `src/lib/getStaples.ts` — a fixed list of household items (fruit, nuts, dairy, detergent, ...) that's always shown last on the shopping list under "Alltid hemma", regardless of the menu. Keep `STAPLES` in alphabetical order (Swedish collation, so Å, Ä, Ö come last).
   - `src/lib/recipes/<slug>.json` — one file per recipe, slug = filename without `.json`. Instructions are written in Swedish, matching the rest of the UI text. Schema:
     ```json
     {
