@@ -28,6 +28,8 @@ CI (`.github/workflows/smoke-test.yaml`) runs `npm run lint` and `npm run build`
 
 ## Commit messages
 
+Commit after each logical change (one commit per change, don't batch unrelated changes). Don't push unless asked.
+
 Use context-based commits, not conventional commits (`feat:`/`fix:`/`chore:`). Prefix with the area touched, e.g.:
 
 ```
