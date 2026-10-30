@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-10-31@alexanderczigler.github.io
+DTSTAMP:20261030T123111Z
+DTSTART;TZID=Europe/Stockholm:20261031T163000
+DTEND;TZID=Europe/Stockholm:20261031T180000
+SUMMARY:🥣 Tom kha gai med tofu\, Tom kha gai med tofu
+DESCRIPTION:Tom kha gai med tofu: https://alexanderczigler.github.io/recept/recipe/tom-kha-gai\nTom kha gai med tofu: https://alexanderczigler.github.io/recept/recipe/tom-kha-gai
+END:VEVENT
+END:VCALENDAR
