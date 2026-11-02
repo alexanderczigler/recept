@@ -18,6 +18,7 @@ export type Recipe =
   | 'indiskt-kryddad-lammgryta'
   | 'italiensk-kycklinggryta'
   | 'kinesisk-gurksallad'
+  | 'klassisk-potatissallad'
   | 'kokoskyckling'
   | 'krämig-grönkål'
   | 'krämig-lax'

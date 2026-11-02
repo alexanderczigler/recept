@@ -1,0 +1,51 @@
+{
+  "title": "Klassisk potatissallad",
+  "ingredients": [
+    {
+      "name": "Kokt potatis",
+      "quantity": 600,
+      "unit": "g"
+    },
+    {
+      "name": "Majonnäs",
+      "quantity": 3,
+      "unit": "dl"
+    },
+    {
+      "name": "Gräddfil",
+      "quantity": 0.5,
+      "unit": "dl"
+    },
+    {
+      "name": "Purjolök",
+      "quantity": 1,
+      "unit": "dl"
+    },
+    {
+      "name": "Dijonsenap",
+      "quantity": 1,
+      "unit": "msk"
+    },
+    {
+      "name": "Kapris",
+      "quantity": 2,
+      "unit": "msk"
+    },
+    {
+      "name": "Dill",
+      "quantity": 4,
+      "unit": "msk"
+    }
+  ],
+  "instructions": [
+    "Skär den kokta potatisen i bitar.",
+    "Blanda samman majonnäs, gräddfil, purjolök, dijonsenap, kapris och dill.",
+    "Tillsätt potatisen och blanda ihop till en krämig sallad.",
+    "Smaka av med salt och peppar."
+  ],
+  "sides": [],
+  "pantry": [
+    "Salt",
+    "Svartpeppar"
+  ]
+}
