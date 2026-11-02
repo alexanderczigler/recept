@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-11-04@alexanderczigler.github.io
+DTSTAMP:20261102T195924Z
+DTSTART;TZID=Europe/Stockholm:20261104T163000
+DTEND;TZID=Europe/Stockholm:20261104T180000
+SUMMARY:🥣 Ugnsbakad lax\, potatis och pepparrotsås
+DESCRIPTION:Ugnsbakad lax\, potatis och pepparrotsås: https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+URL:https://alexanderczigler.github.io/recept/recipe/ugnsbakad-lax
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-05@alexanderczigler.github.io
+DTSTAMP:20261102T195924Z
+DTSTART;TZID=Europe/Stockholm:20261105T163000
+DTEND;TZID=Europe/Stockholm:20261105T180000
+SUMMARY:🥣 Chana daal\, Chana daal
+DESCRIPTION:Chana daal: https://alexanderczigler.github.io/recept/recipe/chana-daal\nChana daal: https://alexanderczigler.github.io/recept/recipe/chana-daal
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-06@alexanderczigler.github.io
+DTSTAMP:20261102T195924Z
+DTSTART;TZID=Europe/Stockholm:20261106T163000
+DTEND;TZID=Europe/Stockholm:20261106T180000
+SUMMARY:🥣 Tacopaj med crème fraiche
+DESCRIPTION:Tacopaj med crème fraiche: https://alexanderczigler.github.io/recept/recipe/tacopaj-med-creme-fraiche
+URL:https://alexanderczigler.github.io/recept/recipe/tacopaj-med-creme-fraiche
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-08@alexanderczigler.github.io
+DTSTAMP:20261102T195924Z
+DTSTART;TZID=Europe/Stockholm:20261108T163000
+DTEND;TZID=Europe/Stockholm:20261108T180000
+SUMMARY:🥣 Gnocchi med tomatsås
+DESCRIPTION:Gnocchi med tomatsås: https://alexanderczigler.github.io/recept/recipe/gnocchi-köttfärssås
+URL:https://alexanderczigler.github.io/recept/recipe/gnocchi-köttfärssås
+END:VEVENT
+END:VCALENDAR
