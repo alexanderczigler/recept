@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-11-12@alexanderczigler.github.io
+DTSTAMP:20261110T172655Z
+DTSTART;TZID=Europe/Stockholm:20261112T163000
+DTEND;TZID=Europe/Stockholm:20261112T180000
+SUMMARY:🥣 Sötpotatis- och morotsoppa
+DESCRIPTION:Sötpotatis- och morotsoppa: https://alexanderczigler.github.io/recept/recipe/sötpotatis-och-morotsoppa
+URL:https://alexanderczigler.github.io/recept/recipe/sötpotatis-och-morotsoppa
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-13@alexanderczigler.github.io
+DTSTAMP:20261110T172655Z
+DTSTART;TZID=Europe/Stockholm:20261113T163000
+DTEND;TZID=Europe/Stockholm:20261113T180000
+SUMMARY:🥣 Risotto med skogschampinjoner
+DESCRIPTION:Risotto med skogschampinjoner: https://alexanderczigler.github.io/recept/recipe/svamprisotto
+URL:https://alexanderczigler.github.io/recept/recipe/svamprisotto
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-14@alexanderczigler.github.io
+DTSTAMP:20261110T172655Z
+DTSTART;TZID=Europe/Stockholm:20261114T163000
+DTEND;TZID=Europe/Stockholm:20261114T180000
+SUMMARY:🥣 Pokebowl
+DESCRIPTION:Pokebowl: https://alexanderczigler.github.io/recept/recipe/pokebowl
+URL:https://alexanderczigler.github.io/recept/recipe/pokebowl
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-15@alexanderczigler.github.io
+DTSTAMP:20261110T172655Z
+DTSTART;TZID=Europe/Stockholm:20261115T163000
+DTEND;TZID=Europe/Stockholm:20261115T180000
+SUMMARY:🥣 Bouillabaisse
+DESCRIPTION:Bouillabaisse: https://alexanderczigler.github.io/recept/recipe/bouillabaisse
+URL:https://alexanderczigler.github.io/recept/recipe/bouillabaisse
+END:VEVENT
+END:VCALENDAR
