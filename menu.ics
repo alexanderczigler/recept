@@ -1,0 +1,33 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//alexanderczigler.github.io//Middag//SV
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Middagsmeny
+REFRESH-INTERVAL;VALUE=DURATION:P1D
+BEGIN:VEVENT
+UID:2026-11-20@alexanderczigler.github.io
+DTSTAMP:20261121T113907Z
+DTSTART;TZID=Europe/Stockholm:20261120T163000
+DTEND;TZID=Europe/Stockholm:20261120T180000
+SUMMARY:🥣 Tacokväll
+DESCRIPTION:Tacokväll: https://alexanderczigler.github.io/recept/recipe/tacokväll
+URL:https://alexanderczigler.github.io/recept/recipe/tacokväll
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-21@alexanderczigler.github.io
+DTSTAMP:20261121T113907Z
+DTSTART;TZID=Europe/Stockholm:20261121T163000
+DTEND;TZID=Europe/Stockholm:20261121T180000
+SUMMARY:🥣 Färdig risotto\, Chana daal
+DESCRIPTION:Färdig risotto: https://alexanderczigler.github.io/recept/recipe/färdig-risotto\nChana daal: https://alexanderczigler.github.io/recept/recipe/chana-daal
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-22@alexanderczigler.github.io
+DTSTAMP:20261121T113907Z
+DTSTART;TZID=Europe/Stockholm:20261122T163000
+DTEND;TZID=Europe/Stockholm:20261122T180000
+SUMMARY:🥣 Currykyckling med ris\, Currykyckling med ris
+DESCRIPTION:Currykyckling med ris: https://alexanderczigler.github.io/recept/recipe/currykyckling\nCurrykyckling med ris: https://alexanderczigler.github.io/recept/recipe/currykyckling
+END:VEVENT
+END:VCALENDAR
